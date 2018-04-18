@@ -104,7 +104,7 @@ while current_time < params['run_duration']:
     print('current time ' + str(current_time))
     print('running to ' + str(run_to))
     gh.run(to=run_to)
-    # ci.add_cosmos(run_to - current_time, delta)
+    ci.add_cosmos(run_to - current_time, delta)
     next_cosmo += cosmo_interval
     current_time = run_to
 
